@@ -24,8 +24,8 @@ export type Media = {
   subtitle?: string
   /** Description of the media. */
   description: string
-  /** URL of the graphic representation of the media such as thumbnails, covers, ... */
-  media?: string
+  /** URI of the graphic representation of the media such as thumbnails, covers, ... */
+  mediaURI?: string
   /** Release date of the media. */
   releaseDate: Date
   /** Original languages of the media. */
@@ -94,7 +94,7 @@ export type Book = Omit<Media, 'releaseDate'> & {
   /** Status of the book. @see {@link BookStatus} */
   status: BookStatus
   /** Code number of the book such as EAN, ISBN, ... */
-  codeNumber?: number
+  codeNumber?: string
   /** Translation of the book. */
   translation?: string
   /** Property of the book. */
