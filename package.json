@@ -10,9 +10,11 @@
     "docs": "npx typedoc --entryPointStrategy expand ./src"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^2.2.3",
     "next": "14.1.4",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-redux": "^9.1.0"
   },
   "devDependencies": {
     "@types/node": "^20",
@@ -23,6 +25,7 @@
     "eslint": "^8",
     "eslint-config-next": "14.1.4",
     "postcss": "^8",
+    "sass": "^1.72.0",
     "tailwindcss": "^3.3.0",
     "typescript": "^5"
   }
