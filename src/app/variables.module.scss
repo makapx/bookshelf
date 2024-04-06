@@ -1,0 +1,65 @@
+$action: #f44336;
+$adventure: #2196f3;
+$drama: #9c27b0;
+$fantasy: #ff9800;
+$history: #795548;
+$horror: #e91e63;
+$mystery: #9c27b0;
+$romance: #673ab7;
+$scifi: #03a9f4;
+$thriller: #3f51b5;
+$autobiography: #8bc34a;
+$biography: #ffc107;
+$classical: #607d8b;
+$dystopian: #673ab7;
+$humor: #f44336;
+$memoir: #9c27b0;
+$narrative: #ff9800;
+$novel: #795548;
+$poetry: #e91e63;
+$self-help: #9c27b0;
+$young-adult: #3f51b5;
+
+$to-buy: #f44336;
+$to-read: #2196f3;
+$reading: #9c27b0;
+$read: #ff9800;
+$dropped: #795548;
+
+$own: #e91e63;
+$borrowed: #9c27b0;
+$lent: #673ab7;
+$lost: #3f51b5;
+
+:export {
+  action: $action;
+  adventure: $adventure;
+  drama: $drama;
+  fantasy: $fantasy;
+  history: $history;
+  horror: $horror;
+  mystery: $mystery;
+  romance: $romance;
+  scifi: $scifi;
+  thriller: $thriller;
+  biography: $biography;
+  class: $classical;
+  dystopian: $dystopian;
+  humor: $humor;
+  memoir: $memoir;
+  novel: $novel;
+  poetry: $poetry;
+  selfhelp: $self-help;
+  youngadult: $young-adult;
+
+  tobuy: $to-buy;
+  toread: $to-read;
+  reading: $reading;
+  read: $read;
+  dropped: $dropped;
+
+  own: $own;
+  borrowed: $borrowed;
+  lent: $lent;
+  lost: $lost;
+}
