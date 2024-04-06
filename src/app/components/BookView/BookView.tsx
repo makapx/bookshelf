@@ -17,10 +17,10 @@ export const BookView = () => {
       <CardViewToggler />
 
       <div
-        className={[
+        className={classNames(
           'mt-4 grid gap-8',
           bookView === 'list' ? 'mx-auto grid-cols-1' : 'grid-cols-7',
-        ]}
+        )}
       >
         <Card
           mediaURI={bookCover.src}

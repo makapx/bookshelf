@@ -5,6 +5,7 @@ import { useSelector } from 'react-redux'
 import { State } from '../../../lib/store'
 
 import noImage from '@/images/no-image.png'
+import { classNames } from '@/common/classNames'
 
 export const Card = ({
   title,
@@ -31,14 +32,17 @@ export const Card = ({
       )}
 
       <div
-        className={[
+        className={classNames(
           'card w-full bg-neutral shadow-xl',
           bookView === 'list' && 'card-side',
-        ]}
+        )}
       >
         <figure>
           <Image
-            className={['object-contain', bookView === 'list' && 'h-52 w-auto']}
+            className={classNames(
+              'object-contain',
+              bookView === 'list' && 'h-52 w-auto',
+            )}
             src={mediaURI ? mediaURI : noImage.src}
             width={128}
             height={182}
@@ -47,17 +51,17 @@ export const Card = ({
         </figure>
 
         <div
-          className={[
+          className={classNames(
             'card-body text-pretty ',
             bookView === 'list' && 'grow shrink basis-full',
-          ]}
+          )}
         >
           <h2 className="card-title">{title.toCapitalize()}</h2>
           <p
-            className={[
+            className={classNames(
               'pt-1 text-neutral-content line-clamp-3 ',
               bookView === 'grid' && 'hidden',
-            ]}
+            )}
           >
             {description}
           </p>
